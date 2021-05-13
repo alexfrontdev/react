@@ -1,7 +1,11 @@
-import React, { useState } from "react";
-import ReactDOM from "react-dom";
-import MyApp from './App';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import {Chat} from "./components/Chat";
+import {MuiThemeProvider} from "@material-ui/core";
 
-
-
-ReactDOM.render(<MyApp />, document.getElementById("root"));
+ReactDOM.render(
+    <MuiThemeProvider>
+        <Chat/>
+    </MuiThemeProvider>,
+    document.getElementById('root'),
+);
